@@ -81,6 +81,10 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/************ ImgProjects ***********/
+
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -234,7 +238,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/color-sharp2.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,6 +346,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.skill .itemimg {
+  animation: rotar 10s infinite linear;
+}
+
+@keyframes rotar{
+  from{
+    transform:rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+    }
+  }
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -415,12 +430,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
-.proj-imgbx {
+
+.proj-imgbx video{
+  width: 100%;
+}
+.proj-imgbx{
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  /*transform-style: preserve-3d;*/
+  /*transform: rotateY(2deg) rotateX(2deg) rotateZ(2deg);*/
 }
+
+/*.proj-imgbx:hover {
+  transform: rotateY(0deg) rotateX(0deg)
+}*/
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -470,7 +496,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background-image: url('./assets/img/color-sharp.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 60px 0 200px 0;
 }
 .contact img {

@@ -45,43 +45,63 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={html} alt="Image" />
+                                </div>
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={css} alt="Image" />
+                                </div>
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={react} alt="Image" />
+                                </div>
                                 <h5>React</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={rt} alt="Image" />
+                                </div>
                                 <h5>Redux Toolkit</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={javascript} alt="Image" />
+                                </div>
                                 <h5>Javascript</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={nodejss} alt="Image" />
+                                </div>
                                 <h5>Node JS</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={bootstrap} alt="Image" />
+                                </div>
                                 <h5>Bootstrap</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={mysql} alt="Image" />
+                                </div>
                                 <h5>MySql</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={as} alt="Image" />
+                                </div>
                                 <h5>Android Studio</h5>
                             </div>
                             <div className="item">
+                                <div className="itemimg">
                                 <img src={github} alt="Image" />
+                                </div>
                                 <h5>GitHub</h5>
                             </div>
                         </Carousel>
