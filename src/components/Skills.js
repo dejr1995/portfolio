@@ -41,8 +41,8 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Habilidades</h2>
+                        <p>Tecnologias con las que he trabajado:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <div className="itemimg">
@@ -58,9 +58,9 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <div className="itemimg">
-                                <img src={react} alt="Image" />
+                                <img src={javascript} alt="Image" />
                                 </div>
-                                <h5>React</h5>
+                                <h5>Javascript</h5>
                             </div>
                             <div className="item">
                                 <div className="itemimg">
@@ -70,9 +70,9 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <div className="itemimg">
-                                <img src={javascript} alt="Image" />
+                                <img src={react} alt="Image" />
                                 </div>
-                                <h5>Javascript</h5>
+                                <h5>React</h5>
                             </div>
                             <div className="item">
                                 <div className="itemimg">

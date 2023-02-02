@@ -330,7 +330,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
 }
@@ -346,8 +346,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-.skill .itemimg {
+/*.skill .itemimg {
   animation: rotar 10s infinite linear;
+}*/
+
+.skill img:hover {
+  transition: all 300ms;
+  transform: scale(1.15);
 }
 
 @keyframes rotar{
@@ -431,9 +436,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
-.proj-imgbx video{
+.proj-imgbx {
   width: 100%;
 }
+
 .proj-imgbx{
   position: relative;
   border-radius: 30px;
@@ -647,3 +653,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+

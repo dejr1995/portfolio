@@ -13,7 +13,7 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
+  const [buttonText, setButtonText] = useState('Enviar');
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Enviando...");
     let response = await fetch("/contact", {
       method: "POST",
       headers: {
@@ -33,7 +33,7 @@ export const Contact = () => {
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
+    setButtonText("Enviado");
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
@@ -58,7 +58,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Contacto...</h2>
+                <h2>Enviame un mensaje...</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
